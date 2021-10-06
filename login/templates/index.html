@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block body %}
-<form method="POST">
+<form method="POST"  onSubmit = "return checkPassword(this)">
     {% csrf_token %}
     {% include 'messages.html' %}
     <div class="col-md-8">
